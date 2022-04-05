@@ -369,5 +369,8 @@ line-height:25px;
 }
 ```
 
+## Hasil codingan diatas:
+![Sidebar_Widget](screenshot/Sidebar_Widget.PNG)
+
 
 
