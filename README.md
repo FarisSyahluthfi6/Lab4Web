@@ -149,122 +149,31 @@ color: #b5b5b5;
 ```
 
 
-## 4. Membuat Form
-![Membuat_Form](screenshot/Membuat_Form.PNG)
+## 4. Membuat Navigasi
+![Membuat_Navigasi](screenshot/Membuat_Navigasi.PNG)
 
-Ini adalah sebuah hasil dari texs Kodingan tag Membuat Form<p>
- Dan Ini Adalah program codingan dari tag Membuat Form:
+Ini adalah sebuah hasil dari texs Kodingan tag Membuat Navigasi<p>
+ Dan Ini Adalah program codingan dari tag Membuat Navigasi:
 
- ```html
+ ```css
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML Lanjutan</title>
-</head>
-<body bgcolor="brown">
-    <style>
-        form p > label {
-        display: inline-block;
-        width: 100px;
-        }
-
-        h1 {
-	    color: #f0e9ee;
-        font-size: 20px;
-        text-align: center;
-        }
-
-        label {
-	    color: #f0e9ee;
-        font-size: 15px;
-        text-align: center;
-        }
-
-        p1 {
-	    color: #f0e9ee;
-        font-size: 20px;
-        text-align: center;
-        }
-
-        legend {
-	    color: #f0e9ee;
-        font-size: 20px;
-        text-align: center;
-        }
-
-        form input[type="text"], form textarea {
-        border: 1px solid #197a43;
-        }
-
-        form input[type="submit"] {
-        border: 1px solid #197a43;
-        background-color: #197a43;
-        color: #ffffff;
-        font-weight: bold;
-        padding: 5px 15px;
-        }
-
-        </style>
-
-        
-<header>
-<h1><center>PENDAFTARAN MAHASISWA BARU UNIVERSITAS PELITA BANGSA</center></h1>
-
-<form action="proses.php" method="post">
-    <fieldset>
-    <legend><center><b>Registrasi Mahasiswa</b></center></legend>
-    <p1><center><i>SILAHKAN ISI DATA DISINI...</i></center></p1>
-
-    <p>
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama">
-    </p>
-
-    <p>
-        <label for="Tempat_Lahir">Tempat Lahir:</label>
-        <input type="text" id="tempat_lahir" name="tempat_lahir">
-    </p>
-
-    <p>
-        <label for="tgl_lahir">Tanggal Lahir:</label>
-        <input type="date" name="tgl_lahir" required><br>
-    </p>
-
-    <p>
-        <label for="alamat">Alamat:</label>
-        <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
-    </p>
-
-    <p>
-        <label>Jenis Kelamin:</label>
-        <input id="jk_l" type="radio" name="kelamin" value="L" /><label
-        for="jk_l">Laki-laki</label>
-        <input id="jk_p" type="radio" name="kelamin" value="P" /><label
-        for="jk_p">Perempuan</label>
-    </p>
-
-    <p>
-        
-            <label>Agama:</label>
-            <select name="agama">
-                <option value="islam">Islam</option>
-                <option value="kristen">Kristen</option>
-                <option value="hindu">Hindu</option>
-                <option value="budha">Budha</option>
-            </select>
-        
-    </p>
-
-<p><input type="submit" value="DAFTAR"></p>
-</fieldset>
-</form>
-
-</header>
-</body>
-</html>
+/* navigasi */
+nav {
+    display: block;
+    background-color: #df1e28;
+    }
+    nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    nav a.active,
+    nav a:hover {
+    background-color: #111010;
+    }
 
 ```
 
