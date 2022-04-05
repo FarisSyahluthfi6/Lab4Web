@@ -69,89 +69,85 @@ Ini adalah sebuah hasil dari texs Kodingan tag Membuat Box Element<p>
  ```
 
 
-## 3. Membuat Tabel
-![Tabel](screenshot/Membuat_Tabel.PNG)
+## 2. Membuat Layout Sederhana
+![Layout_Sederhana](screenshot/Layout_Sederhana.PNG)
 
-Ini adalah sebuah hasil dari texs Kodingan tag membuat Tabel<p>
- Dan Ini Adalah program codingan dari tag membuat Tabel:
+Ini adalah sebuah hasil dari texs Kodingan tag Membuat Layout Sederhana<p>
+ Dan Ini Adalah program codingan dari tag Membuat Layout Sederhana:
 
 ## Contoh Kode
 ```Html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML Lanjutan</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Layout Sederhana</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="grey">
+<body>
+<div id="container">
+</div>
+
 <header>
-<h1><center>Membuat Table</center></h1>
-</header>
-<p><b>DATA MAHASISWA UNIVERSITAS PELITA BANGSA</b></p>
+    <h1>WEBSITE FARIS SYAHLUTHFI</h1>
+    </header>
+    <nav>
+    <a href="home.html" class="active">Home</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="about.html">About</a>
+    <a href="kontak.html">Kontak</a>
+    </nav>
+    <section id="hero"></section>
+    <section id="wrapper">
+    <section id="main"></section>
+    <aside id="sidebar"></aside>
+    </section>
+    <footer>
+    <p>&copy; 2022 - Faris Syahluthfi</p>
+    </footer>
 
-<table border="1" cellpadding="6" cellspacing="0">
-    <thead>
-    <tr style="background-color: rgb(151, 35, 35);">
-    <th>No.</th>
-    <th>Nama</th>
-    <th>Fakultas</th>
-    <th>Program Studi</th>
-    <th>Kelas</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>1.</td>
-    <td>Faris</td>
-    <td rowspan="3">Teknik</td>
-    <td>Teknik Informatika</td>
-    <td>Reguler Pagi</td>
-    </tr>
-
-    <tr>
-    <td>2.</td>
-    <td>Farhan</td>
-    <td>Teknik Industri</td>
-    <td>Reguler malam</td>
-    </tr>
-
-    <tr>
-    <td>3.</td>
-    <td>Farel</td>
-    <td>Teknik Lingkungan</td>
-    <td>Wekend</td>
-    </tr>
-
-    <tr>
-        <td>4.</td>
-        <td>Anisa</td>
-        <td rowspan="3">Managemen</td>
-        <td>Managemen Akuntansi</td>
-        <td>Reguler Pagi</td>
-        </tr>
-    
-        <tr>
-        <td>5.</td>
-        <td>Ayu</td>
-        <td>Managemen Perkantoran</td>
-        <td>Reguler malam</td>
-        </tr>
-    
-        <tr>
-        <td>6.</td>
-        <td>Amel</td>
-        <td>Managemen Bisnis</td>
-        <td>Wekend</td>
-        </tr>
-
-
-    </tbody>
-    </table>
 
 </body>
 </html>
 ```
+
+Kemudian tambahkan kode CSS untuk membuat layoutnya:
+```css
+/* import google font */
+@import
+url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Wet+Paint&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Wet+Paint&display=swap');
+/* Reset CSS */
+* {
+margin: 0;
+padding: 0;
+}
+body {
+line-height:1;
+font-size:100%;
+font-family:'Open Sans', sans-serif;
+color:#662424;
+}
+#container {
+width: 980px;
+margin: 0 auto;
+box-shadow: 0 0 1em #cccccc;
+}
+/* header */
+header {
+padding: 20px;
+}
+header h1 {
+margin: 20px 10px;
+color: #b5b5b5;
+}
+
+```
+
 
 ## 4. Membuat Form
 ![Membuat_Form](screenshot/Membuat_Form.PNG)
