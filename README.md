@@ -372,5 +372,21 @@ line-height:25px;
 ## Hasil codingan diatas:
 ![Sidebar_Widget](screenshot/Sidebar_Widget.PNG)
 
+## 8. Mengatur Footer
+Selanjutnya mengatur tampilan footer. Tambahkan CSS untuk footer.
+```css
+/* footer */
+footer {
+    clear:both;
+    background-color:#1d1d1d;
+    padding:20px;
+    color:#eee;
+    }
+```
+
+## Hasil codingan diatas:
+![Mengatur_Footer](screenshot/Mengatur%20_Footer.PNG)
+
+
 
 
